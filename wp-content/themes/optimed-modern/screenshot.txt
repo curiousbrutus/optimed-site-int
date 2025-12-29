@@ -1,0 +1,13 @@
+<?php
+/**
+ * Screenshot generator for theme
+ * This creates a simple preview image for the theme
+ */
+
+// This is a placeholder. In a real scenario, you would:
+// 1. Take a screenshot of your live theme
+// 2. Save it as screenshot.png (880x660px recommended)
+// 3. Place it in the theme directory
+
+// For now, we'll note that a screenshot should be added
+echo "Please add a screenshot.png file (880x660px) to represent your theme in the WordPress admin.\n";

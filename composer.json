@@ -1,0 +1,50 @@
+{
+  "name": "optimed/hospital-site",
+  "description": "Modern WordPress site for Optimed Hospital",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "composer/installers": "^2.0",
+    "johnpbloch/wordpress": "^6.9",
+    "wpackagist-plugin/redis-cache": "^2.5",
+    "wpackagist-plugin/wordpress-seo": "^23.0",
+    "wpackagist-plugin/wordfence": "^7.11",
+    "wpackagist-plugin/wp-super-cache": "^1.12",
+    "wpackagist-plugin/contact-form-7": "^5.9",
+    "wpackagist-plugin/elementor": "^3.24",
+    "wpackagist-plugin/query-monitor": "^3.16",
+    "wpackagist-theme/twentytwentyfour": "*"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7",
+    "phpcompatibility/php-compatibility": "^9.3"
+  },
+  "extra": {
+    "wordpress-install-dir": "wordpress",
+    "installer-paths": {
+      "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "wp-content/themes/{$name}/": ["type:wordpress-theme"],
+      "wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "johnpbloch/wordpress-core-installer": true
+    },
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php -r \"file_exists('wp-config.php') || copy('wp-config-sample.php', 'wp-config.php');\""
+    ]
+  }
+}
