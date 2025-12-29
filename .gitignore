@@ -1,0 +1,62 @@
+# WordPress Core
+/wordpress/
+/wp-admin/
+/wp-includes/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+
+# WordPress Config
+wp-config.php
+wp-config-sample.php
+.htaccess
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Composer
+/vendor/
+
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup and database
+*.sql
+*.sql.gz
+*.wpress
+*.zip
+backup/
+backups/
+
+# Cache and temporary files
+/wp-content/cache/
+/wp-content/uploads/cache/
+/wp-content/w3tc-config/
+tmp/
+temp/
+
+# Security
+sitemap.xml
+sitemap.xml.gz
