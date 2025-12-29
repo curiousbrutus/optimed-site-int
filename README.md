@@ -2,6 +2,10 @@
 
 Modern, fast, and responsive WordPress site for Optimed Hospital with performance optimizations and contemporary design.
 
+> 🇹🇷 **Türkçe dokümantasyon için [README.tr.md](README.tr.md) dosyasına bakın.**
+
+> 📚 **Quick Start**: See [QUICKSTART.md](QUICKSTART.md) for a 5-minute setup guide!
+
 ## 🚀 Features
 
 - **Modern Design**: Clean, professional healthcare-focused design
